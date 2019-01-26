@@ -1,8 +1,28 @@
 h1 {
     color: blue;
-    text-align: center;
+    text-align: left;
+}
+
+h2 {
+    color: Darkmagenta;
+    text-align: left;
 }
 
 p {
     color: red;
+	background-color: black;
+}
+
+.foo {
+	color: #00cccc;
+	font-size: medium;
+	font-style: italic;
+	font-family: Courier;
+}
+
+.bar {
+	color: #cccc00;
+	font-size: medium;
+	font-style: italic;
+	font-family: Courier;
 }

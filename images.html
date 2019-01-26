@@ -1,28 +1,54 @@
-{% extends "layout.html" %}
-
-{% block title %}
-    Fave Images
-{% endblock %}
-
-{% block main %}
-    <p>The following photos are decent, but need some organization.</p>
-    <div><img alt="1" src="images/20171210_212234.jpg" width="50%"/></div>
-    <p></p>
-    <div><img alt="2" src="images/DSC00383.jpg" width="50%"/></div>
-    <p></p>
-    <div><img alt="3" src="images/DSC00666.jpg" width="50%"/></div>
-    <p></p>
-    <div><img alt="4" src="images/IMAG4576.jpg" width="50%"/></div>
-    <p></p>
-    <div><img alt="5" src="images/IMG_5473.jpg" width="50%"/></div>
-    <p></p>
-    <div><img alt="6" src="images/IMG_20170101_184157_069.jpg" width="50%"/></div>
-    <p></p>
-    <div><img alt="7" src="images/P1130246.jpg" width="50%"/></div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Some Pics</title>
+        <style>
+            h::selection {
+                color: red;
+                background-color: yellow;
+            }
+			
+            a::before {
+                content: "\21d2  Go to ";
+                font-weight: bold;
+            }
+			
+            ol > li {
+                color: #abcdef;
+            }
+        </style>
+    </head>
+    <body>
+    <h>Table of Contents</h>
+	<ul>
+		<li><a href="#section1">Animals</a></li>
+		<ol>
+		<li>Leela Banana</li>
+		<li>Charlie</li>
+		<li>Tiger</li>
+		<li>Pablo</li>
+		</ol>
+		<li><a href="#section2">Places</a></li>
+		<ol>
+		<li>Narita, Japan</li>
+		<li>Sand Rock, Alabama, USA</li>
+		<li>Lost Wall, Georgia, USA</li>
+		</ol>
+	</ul>
+	<h id="section1">Animals</h>
+	<p><img alt="1" src="images/20171210_212234.jpg" width="70%"></p>
+    <p><img alt="3" src="images/DSC00666.jpg" width="70%"></p>
+    <p><img alt="5" src="images/IMG_5473.jpg" width="70%"></p>
+	<p><img alt="7" src="images/P1130246.jpg" width="70%" style="transform:rotate(90deg);"></p>
 	
-	
-		<div>
-		<a href="index.html">Return to main </a>
-		</div>
-		
-{% endblock %}
+	<h id="section2">Places</h>
+	<p><img alt="2" src="images/DSC00383.jpg" width="70%"></p>
+    <p><img alt="4" src="images/IMAG4576.jpg" width="70%"></p>
+    <p><img alt="6" src="images/IMG_20170101_184157_069.jpg" width="70%"></p>
+	<div>
+	<a href="index.html">Return to main </a>
+	</div>
+
+
+    <body>
+</html>

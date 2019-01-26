@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Used for mobile to intiialize parameters-->
+		<style>
+            @media (min-width: 500px) {
+                body {
+                    background-color: red;
+                }
+                h1::before {
+                    content: "Welcome to My Web Page!";
+                }
+            }
+
+            @media (max-width: 499px) {
+                body {
+                    background-color: blue;
+                }
+                h1::before {
+                    content: "Welcome!";
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1></h1>
+		<div>
+		<a href="index.html">Return to main </a>
+		</div>
+    </body>
+</html>
